@@ -8,6 +8,10 @@ workspace for tracking, assigning, and resolving support requests.
 
 Screenshots captured from the running application:
 
+| Dashboard | Tickets |
+|---|---|
+| ![TicketFlow dashboard](docs/screenshots/dashboard.png) | ![Tickets page with search and pagination](docs/screenshots/tickets.png) |
+
 | Add user | User management |
 |---|---|
 | ![Add User page](docs/screenshots/add-user.png) | ![Users page with search and pagination](docs/screenshots/users.png) |
