@@ -20,15 +20,27 @@ Screenshots captured from the running application:
 
 ![Create Ticket page](docs/screenshots/create-ticket.png)
 
-## Live demo
+## Live frontend demo
 
-**Not deployed yet.** The public demo URL will be added here after deployment:
+The browser-only frontend demo is configured for [Vercel](https://vercel.com/new).
+Import `Ganesh-M-hash/TicketFlow` and set the project root directory to
+`frontend`. Vite's production configuration enables demo mode automatically,
+and `frontend/vercel.json` supports direct links to application routes.
 
-> Live demo: pending deployment
+> Live demo: deployment pending
 
-The application requires both its frontend and its ASP.NET API with a
-PostgreSQL database. Deploying only the frontend will not provide working
-authentication, tickets, or user management.
+### Demo login
+
+- Email: `admin@ticketflow.demo`
+- Password: `TicketFlowDemo!2026`
+
+The interactive demo seeds sample tickets and team members in the visitor's
+browser. Changes are stored only in that browser's local storage; they are
+not shared between visitors or devices and do not reach the backend. Do not
+enter real passwords or personal information.
+
+The ASP.NET API and PostgreSQL database are not deployed. This frontend-only
+demo is for exploring the interface with sample data, not for production use.
 
 ## Project structure
 

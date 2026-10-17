@@ -19,6 +19,7 @@
 **/.env
 **/.env.*
 !**/.env.example
+!/frontend/.env.production
 *.local
 
 # Logs and operating-system files

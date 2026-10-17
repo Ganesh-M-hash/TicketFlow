@@ -5,6 +5,10 @@ import Button from "../components/Button";
 import { useAuth } from "../context/useAuth";
 import authService from "../services/authService";
 
+const IS_DEMO_MODE = import.meta.env.VITE_DEMO_MODE === "true";
+const DEMO_EMAIL = "admin@ticketflow.demo";
+const DEMO_PASSWORD = "TicketFlowDemo!2026";
+
 function Login() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -129,8 +133,31 @@ function Login() {
             </Button>
           </form>
 
+          {IS_DEMO_MODE && (
+            <div className="login-demo-notice">
+              <strong>Try the interactive demo</strong>
+              <p>
+                Email: <code>{DEMO_EMAIL}</code>
+                <br />
+                Password: <code>{DEMO_PASSWORD}</code>
+              </p>
+              <button
+                type="button"
+                onClick={() => {
+                  setEmail(DEMO_EMAIL);
+                  setPassword(DEMO_PASSWORD);
+                }}
+              >
+                Fill demo login
+              </button>
+              <span>Demo changes are saved only in this browser.</span>
+            </div>
+          )}
+
           <p className="login-footnote">
-            Access is limited to authorized team members.
+            {IS_DEMO_MODE
+              ? "This public demo uses sample data and does not connect to a live backend."
+              : "Access is limited to authorized team members."}
           </p>
         </div>
       </section>

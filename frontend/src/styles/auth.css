@@ -234,6 +234,49 @@
   line-height: 1.6;
 }
 
+.login-demo-notice {
+  display: grid;
+  gap: 9px;
+  margin-top: 20px;
+  padding: 14px 16px;
+  border: 1px solid #cfe2d9;
+  border-radius: 8px;
+  background: #f2f8f5;
+  color: #30443d;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.login-demo-notice p {
+  margin: 0;
+}
+
+.login-demo-notice code {
+  color: #17624c;
+  font-size: 11px;
+}
+
+.login-demo-notice button {
+  justify-self: start;
+  padding: 7px 11px;
+  border: 1px solid #b9d3c7;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #17624c;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.login-demo-notice button:hover {
+  background: #e5f1eb;
+}
+
+.login-demo-notice > span {
+  color: #64766f;
+  font-size: 11px;
+}
+
 .header-logout-button {
   display: inline-flex;
   min-height: 38px;
