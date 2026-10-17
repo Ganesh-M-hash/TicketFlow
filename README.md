@@ -22,12 +22,11 @@ Screenshots captured from the running application:
 
 ## Live frontend demo
 
-The browser-only frontend demo is configured for [Vercel](https://vercel.com/new).
-Import `Ganesh-M-hash/TicketFlow` and set the project root directory to
-`frontend`. Vite's production configuration enables demo mode automatically,
-and `frontend/vercel.json` supports direct links to application routes.
+The browser-only frontend demo is live on Vercel. Vite's production
+configuration enables demo mode automatically, and `frontend/vercel.json`
+supports direct links to application routes.
 
-> Live demo: deployment pending
+> Live demo: [ticket-flow-three-chi.vercel.app](https://ticket-flow-three-chi.vercel.app/)
 
 ### Demo login
 
