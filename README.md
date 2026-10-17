@@ -6,16 +6,15 @@ workspace for tracking, assigning, and resolving support requests.
 
 ## Application screenshots
 
-Screenshots from a running, authenticated application should be added under
-`docs/screenshots/` and embedded here. The current local preview only reaches
-the sign-in page without an authenticated API session, so authenticated
-dashboard and table screenshots are not included yet.
+Screenshots captured from the running application:
 
-<!-- Add screenshots after capturing the authenticated dashboard and ticket/user tables.
-![TicketFlow dashboard](docs/screenshots/dashboard.png)
-![Ticket table](docs/screenshots/tickets.png)
-![User management](docs/screenshots/users.png)
--->
+| Add user | User management |
+|---|---|
+| ![Add User page](docs/screenshots/add-user.png) | ![Users page with search and pagination](docs/screenshots/users.png) |
+
+### Create a ticket
+
+![Create Ticket page](docs/screenshots/create-ticket.png)
 
 ## Live demo
 
